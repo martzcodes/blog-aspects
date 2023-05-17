@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Synth throws an error because bucket is not versioned 1`] = `
+Annotations {
+  "_messages": {
+    "0": {
+      "entry": {
+        "data": "Bucket versioning is not enabled",
+        "trace": [
+          "Annotations.addMessage (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1233)",
+          "Annotations.addError (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/core/lib/annotations.js:1:785)",
+          "ValidateVersioningAspect.visit (/Users/mattmartz/dev/blog-aspects/lib/ValidateVersioningAspect.ts:11:36)",
+          "recurse (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:1868)",
+          "recurse (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:2196)",
+          "recurse (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:2196)",
+          "recurse (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:2196)",
+          "invokeAspects (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:1494)",
+          "Object.synthesize (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:562)",
+          "App.synth (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/core/lib/stage.js:1:1942)",
+          "toMessages (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/assertions/lib/annotations.js:1:2782)",
+          "Function.fromStack (/Users/mattmartz/dev/blog-aspects/node_modules/aws-cdk-lib/assertions/lib/annotations.js:1:627)",
+          "Object.<anonymous> (/Users/mattmartz/dev/blog-aspects/test/validate.test.ts:11:35)",
+          "Promise.then.completed (/Users/mattmartz/dev/blog-aspects/node_modules/jest-circus/build/utils.js:293:28)",
+          "new Promise (<anonymous>)",
+          "callAsyncCircusFn (/Users/mattmartz/dev/blog-aspects/node_modules/jest-circus/build/utils.js:226:10)",
+          "_callCircusTest (/Users/mattmartz/dev/blog-aspects/node_modules/jest-circus/build/run.js:297:40)",
+          "processTicksAndRejections (node:internal/process/task_queues:95:5)",
+          "_runTest (/Users/mattmartz/dev/blog-aspects/node_modules/jest-circus/build/run.js:233:3)",
+          "_runTestsForDescribeBlock (/Users/mattmartz/dev/blog-aspects/node_modules/jest-circus/build/run.js:135:9)",
+          "run (/Users/mattmartz/dev/blog-aspects/node_modules/jest-circus/build/run.js:68:3)",
+          "runAndTransformResultsToJestFormat (/Users/mattmartz/dev/blog-aspects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)",
+          "jestAdapter (/Users/mattmartz/dev/blog-aspects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)",
+          "runTestInternal (/Users/mattmartz/dev/blog-aspects/node_modules/jest-runner/build/runTest.js:367:16)",
+          "runTest (/Users/mattmartz/dev/blog-aspects/node_modules/jest-runner/build/runTest.js:444:34)",
+          "Object.worker (/Users/mattmartz/dev/blog-aspects/node_modules/jest-runner/build/testWorker.js:106:12)",
+        ],
+        "type": "aws:cdk:error",
+      },
+      "id": "/MyTestStack/MyBucket/Resource",
+      "level": "error",
+    },
+  },
+}
+`;
